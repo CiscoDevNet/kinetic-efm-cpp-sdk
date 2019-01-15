@@ -1,0 +1,4 @@
+<map id="cisco::efm_sdk::ActionColumnEditor" name="cisco::efm_sdk::ActionColumnEditor">
+<area shape="rect" id="node2" href="$classcisco_1_1efm__sdk_1_1editor_1_1Download.html" title="Downloads a file. " alt="" coords="5,95,156,136"/>
+<area shape="rect" id="node3" href="$classcisco_1_1efm__sdk_1_1editor_1_1TextArea.html" title="String editor with date text area properties. " alt="" coords="180,95,331,136"/>
+</map>
