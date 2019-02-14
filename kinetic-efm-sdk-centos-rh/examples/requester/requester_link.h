@@ -141,7 +141,6 @@ public:
   /// @param ec The error code will be set to an error if the subscription update failed.
   void on_subscription_update(const NodePath& path, const SubscriptionUpdate& update, const std::error_code& ec)
   {
-    (void)path;
     if (!ec) {
       std::cerr << "RequesterLink - on_subscription_update - " << path << " - " << update.value_ << " "
                 << update.time_stamp_ << std::endl;

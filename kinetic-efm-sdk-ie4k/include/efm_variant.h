@@ -178,7 +178,7 @@ public:
     if (!std::isfinite(f)) {
       throw exception(error_code::efm_variant_error, "not a valid float");
     }
-    new (raw_) double(f);
+    new (raw_) double(static_cast<double>(f));
   }
 
   /// Constructs a variant of double type. VariantBase::is_null will be false. The type will be VariantBase::Double.

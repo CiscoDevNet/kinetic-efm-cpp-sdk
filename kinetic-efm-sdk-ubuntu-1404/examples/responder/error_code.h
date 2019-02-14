@@ -2,7 +2,7 @@
 // Copyright (c) 2018 Cisco and/or its affiliates. All rights reserved.
 // @copyright_end
 
-/// @file error_code.h
+/// @file examples/responder/error_code.h
 
 #pragma once
 

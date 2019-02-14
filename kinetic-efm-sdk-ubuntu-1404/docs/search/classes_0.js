@@ -7,6 +7,7 @@ var searchData=
   ['actionparametereditor',['ActionParameterEditor',['../classcisco_1_1efm__sdk_1_1ActionParameterEditor.html',1,'cisco::efm_sdk']]],
   ['actionresult',['ActionResult',['../classcisco_1_1efm__sdk_1_1ActionResult.html',1,'cisco::efm_sdk']]],
   ['actionresultstream',['ActionResultStream',['../classcisco_1_1efm__sdk_1_1ActionResultStream.html',1,'cisco::efm_sdk']]],
+  ['actionstreammetadata',['ActionStreamMetaData',['../structcisco_1_1efm__sdk_1_1ActionStreamMetaData.html',1,'cisco::efm_sdk']]],
   ['actionstreamresult',['ActionStreamResult',['../classcisco_1_1efm__sdk_1_1ActionStreamResult.html',1,'cisco::efm_sdk']]],
   ['actiontableresult',['ActionTableResult',['../classcisco_1_1efm__sdk_1_1ActionTableResult.html',1,'cisco::efm_sdk']]],
   ['actionvaluesresult',['ActionValuesResult',['../classcisco_1_1efm__sdk_1_1ActionValuesResult.html',1,'cisco::efm_sdk']]]

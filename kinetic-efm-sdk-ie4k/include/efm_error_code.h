@@ -33,7 +33,11 @@ enum class error_code
   node_is_not_writable,
   empty_name_specified,
   invalid_name_characters_specified,
-  internal_error
+  internal_error,
+  no_dslink_json_found,
+  invalid_dslink_json,
+  invalid_remove_operation,
+  invalid_permission_specified
 };
 
 

@@ -38,7 +38,7 @@ public:
   /// @param ec Error code to set.
   exception(const std::error_code& ec)
     : std::system_error(ec)
-    , message_{ec.message()}
+    , what_{ec.message()}
   {
   }
 
@@ -48,7 +48,7 @@ public:
   exception(const std::error_code& ec, const std::string& what_arg)
     : system_error(ec, what_arg)
   {
-    build_message(ec, what_arg);
+    build_what(ec, what_arg);
   }
 
   /// Constructor.
@@ -57,22 +57,31 @@ public:
   exception(const std::error_code& ec, const char* what_arg)
     : system_error(ec, what_arg)
   {
-    build_message(ec, what_arg);
+    build_what(ec, what_arg);
   }
 
   /// Returns the formatted message.
   /// @return The formatted message.
   const char* what() const noexcept override
   {
-    return message_.c_str();
+    return what_.c_str();
+  }
+
+  /// Returns the additional information for the error - might be empty.
+  /// @return The additional information for the error.
+  const std::string& message() const
+  {
+    return message_;
   }
 
 private:
-  void build_message(const std::error_code& ec, const std::string& what_arg)
+  void build_what(const std::error_code& ec, const std::string& what_arg)
   {
-    message_ = ec.message() + ": " + what_arg;
+    what_ = ec.message() + ": " + what_arg;
+    message_ = what_arg;
   }
 
+  std::string what_;
   std::string message_;
 };
 }

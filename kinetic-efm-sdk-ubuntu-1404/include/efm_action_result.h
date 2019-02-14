@@ -279,35 +279,6 @@ private:
   ActionStreamingMode mode_{ActionStreamingMode::Stream};
 };
 
-/// @brief The TableModifier specifies for the requester how to handle the new rows.
-
-/// The modifier can specify to insert the rows at a specific offset or to replace a range of rows with the new rows.
-/// Not setting the modifier means to just follow the ActionStreamingMode.
-struct TableModifier final
-{
-  /// The modifier specifies the handling for the requester.
-  enum Modifier
-  {
-    None,   ///< Just follow the ActionStreamingMode.
-    Insert, ///< Insert the new rows.
-    Replace ///< Replace a range with the new rows.
-  };
-
-  /// Resets the modifier to its default values.
-  void reset()
-  {
-    modifier_ = None;
-    start_ = 0;
-    end_ = 0;
-  }
-
-  /// The modifier
-  Modifier modifier_{None};
-  /// The start index of the modifier
-  uint64_t start_{0};
-  /// The end index of the modifier (only used by Replace)
-  uint64_t end_{0};
-};
 
 /// @brief Action result type for a table of row values.
 

@@ -6,8 +6,10 @@
 
 #pragma once
 
+#include <efm_optional.h>
 #include <efm_types.h>
 #include <efm_variant.h>
+
 
 namespace cisco
 {
@@ -27,7 +29,9 @@ class InvokeResponse
 {
 public:
   StreamStatus status_;
+  Variant columns_;
   Variant updates_;
+  Optional<ActionStreamMetaData> meta_;
 };
 }
 }

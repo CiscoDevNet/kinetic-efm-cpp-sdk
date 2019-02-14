@@ -1,5 +1,41 @@
 # Cisco Kinetic EFM IOT C++ SDK Changelog
 
+## Changes since 1.0.14
+
+### Breaking changes
+
+* Updated redo log file format to version 2 (no migration necessary as it is compatible with version 1).
+    * Files generated with this version can no longer be read by earlier versions.
+
+### Packaging Notes
+
+* All C++ links have to supply a package name in their `dslink.json` file which contains the string `-cpp-`. This is
+  necessary for the C++ Broker Lifecycle Manager to distinguish the different link SDK languages.
+  
+### Third-party library changes
+
+* Updated Boost to 1.69.
+* Added zlib 1.2.11.
+
+### Other changes
+
+* Better error handling for link options.
+* Fixed typos in error messages.
+* Fixed premature calling of callback in node removal operations.
+* Reduced CPU usage while reading from redo log.
+* Fixed potential redo log consistency errors when using `Qos::Persistent` in case of high message load when a link disconnects and connects again.
+* Fixed crash with a redo log containing files with invalid data only when `automatic_recovery` is enabled (default is `true`).
+* Reduced CPU usage when `-log debug` is used.
+* Added simple_responder example. This example is more like the classic 'hello, world!' and much simpler than the responder example.
+* Fixed potential redo log consistency error when loading valid files (could happen if a cleanup was already performed on that particular log).
+* Added new command line options:
+    Command line      | dslink.json (ssl section)
+    ----------------- | -----------------------------------
+    --ssl-self-signed | self_signed_tls_certificate_allowed
+    --ssl-certs-path  | certs_path
+    --ssl-ca-file     | ca_file
+    --ssl-verify-peer | verify_peer
+
 ## Changes since 1.0.13
 
 * Peak memory usage has been greatly reduced.

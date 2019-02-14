@@ -1,7 +1,0 @@
-<map id="cisco::efm_sdk::ActionResult" name="cisco::efm_sdk::ActionResult">
-<area shape="rect" id="node2" href="$classcisco_1_1efm__sdk_1_1ActionStreamResult.html" title="Action result type for a multiple rows of values. The stream has to be closed by the peer..." alt="" coords="5,80,204,121"/>
-<area shape="rect" id="node4" href="$classcisco_1_1efm__sdk_1_1ActionValuesResult.html" title="Action result type for a single row of values. " alt="" coords="228,80,424,121"/>
-<area shape="rect" id="node3" href="$classcisco_1_1efm__sdk_1_1ActionTableResult.html" title="Action result type for a table of row values. " alt="" coords="11,169,199,211"/>
-<area shape="rect" id="node5" href="$classErrorActionValuesResult.html" title="Custom error action result implementation for easier reuse. " alt="" coords="233,177,398,203"/>
-<area shape="rect" id="node6" href="$classMyActionValuesResult.html" title="Custom action result implementation for easier reuse. " alt="" coords="422,177,577,203"/>
-</map>

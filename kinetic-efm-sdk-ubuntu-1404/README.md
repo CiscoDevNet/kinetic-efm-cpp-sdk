@@ -6,7 +6,7 @@ The Cisco Kinetic EFM IOT C++ SDK provides technologies to develop DSA links wit
 
 ## Version
 
-The current SDK version is 1.0.14.
+The current SDK version is 1.0.15.
 
 ## System Requirements and Installation
 
@@ -46,9 +46,23 @@ You can find a couple of samples in the `examples` directory to show the use of 
 
 To build an example, just invoke `make` in the corresponding directory.
 
+To use the examples you need a running broker. As the requester example subscribes to paths from the responder
+example, you should start the responder example before starting the requester example.
+
 To start an example you have to supply the broker url by using the `-b` command line parameter:
 
     prompt> ./responder -b http://localhost:8080/conn
+
+In order to connect via HTTPS to a broker, you might need to enable self signed certificates by adding the following
+section to your `dslink.json` link configuration file:
+
+    "ssl": {
+      "self_signed_tls_certificate_allowed": true
+    }
+
+Then connect to a C++ Broker:
+
+    prompt> ./responder -b https://localhost:8463/conn --ssl-ca-file /opt/cisco/kinetic/cpp_broker/server.ca-bundle
 
 ## License
 
@@ -58,10 +72,9 @@ See LICENSE.md for license information.
 
 The Cisco Kinetic EFM IOT C++ SDK uses the following third-party software:
 
-* boost 1.67
+* Boost 1.69
 * RapidJSON 1.1.0
-
-See [Cisco_Kinetic_EFM_IOT_C++_Broker_and_SDK_v1.0.pdf](Cisco_Kinetic_EFM_IOT_C++_Broker_and_SDK_v1.0.pdf) for license information.
+* zlib 1.2.11
 
 COPYRIGHT © 2018 CISCO SYSTEMS, INC. ALL RIGHTS RESERVED.
 

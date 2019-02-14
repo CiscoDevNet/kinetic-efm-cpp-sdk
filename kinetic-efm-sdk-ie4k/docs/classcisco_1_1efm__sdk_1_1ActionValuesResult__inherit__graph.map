@@ -1,5 +1,0 @@
-<map id="cisco::efm_sdk::ActionValuesResult" name="cisco::efm_sdk::ActionValuesResult">
-<area shape="rect" id="node3" href="$classErrorActionValuesResult.html" title="Custom error action result implementation for easier reuse. " alt="" coords="5,169,171,196"/>
-<area shape="rect" id="node4" href="$classMyActionValuesResult.html" title="Custom action result implementation for easier reuse. " alt="" coords="195,169,349,196"/>
-<area shape="rect" id="node2" href="$classcisco_1_1efm__sdk_1_1ActionResult.html" title="Action result base class. " alt="" coords="83,5,277,32"/>
-</map>

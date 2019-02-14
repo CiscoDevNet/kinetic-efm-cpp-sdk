@@ -9,6 +9,7 @@
 #include <efm_action_column.h>
 #include <efm_action_parameter.h>
 #include <efm_action_result_stream.h>
+#include <efm_error_code.h>
 #include <efm_node_path.h>
 
 #include <functional>
@@ -38,6 +39,9 @@ public:
     : permission_(permission)
     , callback_(std::move(callback))
   {
+    if (permission_ < PermissionLevel::Read) {
+      throw exception(error_code::invalid_permission_specified);
+    }
   }
 
   /// Default copy assignment

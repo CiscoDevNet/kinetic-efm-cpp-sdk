@@ -1,4 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$structstd_1_1is__error__code__enum_3_01cisco_1_1efm__sdk_1_1error__code_01_4.html" title="Specifies that the cisco::efm_sdk::error_code can be converted into a std::error_code. " alt="" coords="129,5,292,61"/>
-<area shape="rect" id="node3" href="$structstd_1_1is__error__code__enum_3_01responder__error__code_01_4.html" title="Specifies that the error_code can be converted into a std::error_code. " alt="" coords="129,85,292,141"/>
-</map>
