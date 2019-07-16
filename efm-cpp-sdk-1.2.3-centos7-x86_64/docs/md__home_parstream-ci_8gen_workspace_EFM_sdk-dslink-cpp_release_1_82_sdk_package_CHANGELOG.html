@@ -87,7 +87,6 @@ $(function() {
 <p>As Ubuntu 14.04 will be End of Life starting April 2019 (see <a href="https://wiki.ubuntu.com/Releases">https://wiki.ubuntu.com/Releases</a> and <a href="https://lists.ubuntu.com/archives/ubuntu-announce/2014-April/000182.html">https://lists.ubuntu.com/archives/ubuntu-announce/2014-April/000182.html</a>) the support for that platform is now deprecated. It will be removed in future release.</p>
 <h3>Packaging changes</h3>
 <p>The package names have been changed to reflect the actual platform and architure:</p><ul>
-<li><code>ie4k</code> -&gt; <code>ubuntu14.04-ppc</code></li>
 <li><code>Linux</code> -&gt; <code>centos7-x86_64</code></li>
 <li><code>Ubuntu14.04</code> -&gt; <code>ubuntu14.04-x86_64</code></li>
 <li><code>Ubuntu16.04</code> -&gt; <code>ubuntu16.04-x86_64</code></li>
@@ -107,15 +106,6 @@ $(function() {
 </ul>
 <h2>Changes since 1.0.15</h2>
 <p>From now on the SDK version is being aligned with the Cisco Kinetic EFM IOT C++ Broker version. This has no effect on the existing compatibility.</p>
-<h3>Packaging changes</h3>
-<ul>
-<li>The ie4k package contents have been aligned with the ones for the other platforms:<ul>
-<li>It no longer contains non-SDK libraries. They need to be obtained via <code>opkg</code> on the system the link will be running on.</li>
-<li>It now contains all the SDK libraries as the other packages (it was lacking the static libraries).</li>
-<li>The examples can now be built successfully.</li>
-</ul>
-</li>
-</ul>
 <h3>Other changes</h3>
 <ul>
 <li>Added <code>package</code> and <code>package-shared</code> targets to all examples to generate a package which can be deployed via the LCM.</li>

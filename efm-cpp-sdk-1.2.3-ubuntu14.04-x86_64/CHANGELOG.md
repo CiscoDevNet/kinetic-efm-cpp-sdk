@@ -26,8 +26,7 @@ As Ubuntu 14.04 will be End of Life starting April 2019 (see https://wiki.ubuntu
 ### Packaging changes
 
 The package names have been changed to reflect the actual platform and architure:
-* `ie4k` -> `ubuntu14.04-ppc`
-* `Linux` -> `centos7-x86_64`
+* `Centos7` -> `centos7-x86_64`
 * `Ubuntu14.04` -> `ubuntu14.04-x86_64`
 * `Ubuntu16.04` -> `ubuntu16.04-x86_64`
 
@@ -47,13 +46,6 @@ The package names have been changed to reflect the actual platform and architure
 ## Changes since 1.0.15
 
 From now on the SDK version is being aligned with the Cisco Kinetic EFM IOT C++ Broker version. This has no effect on the existing compatibility.
-
-### Packaging changes
-
-* The ie4k package contents have been aligned with the ones for the other platforms:
-    * It no longer contains non-SDK libraries. They need to be obtained via `opkg` on the system the link will be running on.
-    * It now contains all the SDK libraries as the other packages (it was lacking the static libraries).
-    * The examples can now be built successfully.
 
 ### Other changes
 
