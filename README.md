@@ -6,7 +6,7 @@ The Cisco Kinetic EFM IOT C++ SDK provides technologies to develop DSA links wit
 
 ## Version
 
-The current SDK version is 1.0.15.
+The current SDK version is 1.2.3.
 
 ## System Requirements and Installation
 

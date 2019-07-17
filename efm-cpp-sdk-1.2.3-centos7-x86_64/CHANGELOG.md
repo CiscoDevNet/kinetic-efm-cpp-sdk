@@ -19,10 +19,6 @@
 
 ## Changes since 1.2.1
 
-### Deprecation notice
-
-As Ubuntu 14.04 will be End of Life starting April 2019 (see https://wiki.ubuntu.com/Releases and https://lists.ubuntu.com/archives/ubuntu-announce/2014-April/000182.html) the support for that platform is now deprecated. It will be removed in future release.
-
 ### Packaging changes
 
 The package names have been changed to reflect the actual platform and architure:
