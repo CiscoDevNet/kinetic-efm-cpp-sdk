@@ -13,7 +13,7 @@ The current SDK version is 1.2.3.
 The Cisco Kinetic EFM IOT C++ SDK is provided for the following platforms:
 
 * CentOS 7 (x86_64)
-* Ubuntu 14.04 (x86_64 / requires g++ 4.9)
+* Ubuntu 14.04 (x86_64 / requires g++ 4.9) - **DEPRECATED Support for Ubuntu 14.04 ends in April 2019**
 * Ubuntu 16.04 (x86_64)
 
 On all system, excluding Ubuntu 14.04, you will also need the g++ platform compiler installed to build links with the SDK.
